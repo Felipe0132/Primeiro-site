@@ -28,7 +28,7 @@ header > h1{
     font-weight: bold;
 }
 
-header > span{
+span{
     color: rgb(10, 121, 0);
     text-decoration: none;
     font-weight: bold;
@@ -72,7 +72,7 @@ article > h1 {
 article > p{
     text-indent: 2%;
     font-family: sans-serif;
-    font-size: medium;
+    font-size: 20px;
     text-align: justify;
     padding: 0px 15px 10px 32px;
 }
@@ -101,8 +101,65 @@ a::after{
     font-weight: bold;
 }
 
-picture{
-   padding: 10px 10px 10px 10px; 
-   margin: auto;
-   text-align: center;
+#imagens{
+    text-align: center;
+    align-items: center;
+}
+
+section{
+    background-color: rgba(12, 119, 12, 0.315);
+    border-radius: 15px;
+    padding: 0px 0px;
+    margin: 73px 11px;
+}
+
+h3{
+    color: white;
+    background-color: green;
+    font-weight: bold;
+    border-radius: 15px 15px 0px 0px;
+    padding: 12px 15px;
+    margin: 10px 0px;
+    font-size: 27px;
+}
+
+#extra{
+    padding: 9px 4px 0px 4px;
+    font-size: 20px;
+}
+
+ul{
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    font-size: 20px;
+}
+
+ul > li{
+    font-size: 17px;
+}
+
+#despedida{
+    font-family: sans-serif;
+    background-color: white;
+    font-size: 13px;
+}
+
+#paragrafo-lista-1{
+    margin: 30px 10px 10px 10px;
+    padding: 0px 10px 10px 10px;
+    font-size: 20px;
+}
+
+#paragrafo-lista-2{
+    margin: 0px 10px 10px 10px;
+    padding: 0px 10px 10px 10px;
+    font-size: 20px;    
+}
+
+footer{
+    background-color: rgb(6, 65, 6);
+    color: white;
+    padding: 0px 0px;
+    margin: 109px -10px -26px;
+    text-align: center;
 }
