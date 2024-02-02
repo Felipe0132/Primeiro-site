@@ -1,8 +1,8 @@
-
+@charset "UTF-8"
 
 @font-face {
     font-family: 'idroid.otf';
-    src: url('fontes/idroid.otf') format('opentype')
+    src: url('fontes/idroid.otf') format('opentype');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
@@ -14,7 +14,7 @@ body{
 
 header{
     background-image: linear-gradient(to top, rgb(3, 58, 3), rgb(34, 138, 34), rgb(55, 194, 55)) ;
-    margin: -9px -9px;
+    margin: -12px -9px;
     padding: 35px 10px 1px;
 }
 
@@ -28,11 +28,23 @@ header > h1{
     font-weight: bold;
 }
 
+nav{
+    background-color: rgb(3, 58, 3);
+    margin: 10px -8px 10px -8px;
+    padding: 10px 10px 10px 10px;
+}
+
+nav > a{
+    padding: 10px 10px;
+    margin: 8px 15px;
+}
+
 span{
     color: rgb(10, 121, 0);
     text-decoration: none;
     font-weight: bold;
 }
+
 header > h2{
     font-family: 'Roboto';
     font-size: 22px;
@@ -78,7 +90,7 @@ article > p{
 }
 
 article > h2{
-    background-image: linear-gradient(to right, rgba(28, 134, 28, 0.253) , rgba(129, 253, 129, 0.253), rgba(216, 252, 216, 0.253) );
+    background-image: linear-gradient(to right, rgba(28, 134, 28, 0.253) , rgba(129, 253, 129, 0.253), rgba(216, 252, 216, 0.253), white );
     color: green;
     font-family: 'idroid.otf';
     padding: 20px 20px 10px 20px;
@@ -106,7 +118,7 @@ a::after{
     align-items: center;
 }
 
-section{
+aside{
     background-color: rgba(12, 119, 12, 0.315);
     border-radius: 15px;
     padding: 0px 0px;
