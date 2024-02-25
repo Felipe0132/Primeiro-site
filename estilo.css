@@ -29,10 +29,27 @@ body{
     background-color: rgb(130, 184, 130);
 }
 
+main{
+    min-width: 280px;
+    max-width: 1000px;
+    margin: -7px auto 10px;
+    background-color: white;
+    padding: 0px 10px 10px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+main p {
+    line-height: 1.5em;
+}
+
 header{
     background-image: linear-gradient(to top, var(--cor5), var(--cor4), var(--cor3), var(--cor2)) ;
     margin: -12px -9px;
-    padding: 35px 10px 1px; 
+    padding: 35px 10px 1px;
+    min-height: 150px; 
+    text-align: center;
 }
 
 header > h1{
@@ -43,24 +60,26 @@ header > h1{
     padding: 25px;
     color: white;
     font-weight: bold;
+    text-shadow: 6px 3px 2px black;
 }
 
 nav{
     background-color: var(--cor5);
     margin: 10px -8px 10px -8px;
     padding: 10px 10px 10px 10px;
+    box-shadow: 0px 5px 7px black;
 }
 
 nav > a{
     padding: 10px 10px;
     margin: 8px 15px;
     color:  var(--cor1);
+    text-decoration: none;
+    transition-duration: .5s;
 }
 
-span{
-    color: var(--cor2);
-    text-decoration: none;
-    font-weight: bold;
+nav > a:hover {
+    color: var(--cor4);
 }
 
 header > h2{
@@ -71,6 +90,7 @@ header > h2{
     color: white;
     padding: 9px 60px 10px 60px;
     font-weight: bold;
+    text-shadow: 6px 3px 2px black;
 }
 
 header > p{
@@ -83,20 +103,16 @@ header > p{
     color: white;
     font-family: var(--fonte-destaque), sans-serif;
     font-weight: bold;
-}
-
-main{
-    background-color: white;
-    padding: 0px 10px 10px 10px;
-    margin: -11px 124px 10px 124px;
+    max-width: 500px;
 }
 
 article > h1 {
-    color: var(--cor2);
+    color: var(--cor5);
     font-family: 'idroid.otf';
     padding: 20px 20px 10px 20px;
     font-size: 34px;
     margin: 10px 10px;
+    text-shadow: 3px 2px 0px black;
 }
 
 article > p{
@@ -116,14 +132,28 @@ article > h2{
     margin: 10px 10px 10px 30px;
 }
 
-a{
-    color: green;
+span{
+    color: var(--cor2);
     text-decoration: none;
     font-weight: bold;
 }
 
-a::after{
+main a{
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--cor3);
+}
+
+main a:visited {
+    color: rgb(141, 235, 141);
+}
+
+main a::after{
     content: '📎';
+}
+main a:hover {
+    color: var(--cor3);
 }
 
 #palavras-decoradas{
@@ -134,6 +164,33 @@ a::after{
 #imagens{
     text-align: center;
     align-items: center;
+}
+
+img{
+    width: 100%;
+    margin: auto;
+}
+
+#imgP{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -10px 30px -10px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 aside{
@@ -151,21 +208,14 @@ h3{
     padding: 12px 15px;
     margin: 10px 0px;
     font-size: 27px;
+    text-shadow: 4px 2px 1px black;
 }
 
-#extra{
-    padding: 9px 4px 0px 4px;
-    font-size: 20px;
-}
 
-ul{
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
-    font-size: 20px;
-}
-
-ul > li{
-    font-size: 17px;
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: "\✔️\00a0\00a0";
 }
 
 #despedida{
@@ -190,6 +240,20 @@ footer{
     background-color: rgb(6, 65, 6);
     color: white;
     padding: 0px 0px;
-    margin: 109px -10px -26px;
+    margin: 20px 0px 0px;
     text-align: center;
+}
+
+footer a{
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:visited {
+    color: rgb(141, 235, 141);
+}
+
+footer a:hover {
+    color: var(--cor3);
 }
